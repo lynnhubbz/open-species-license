@@ -34,6 +34,10 @@ I made and offer some license to be used, here below
 
 ### Undeer Development
 
+This below are just brainstorms. 
+i will do some research comparing this license with open species permissions (even tho i  induce the license from it).
+maybe some kind of table with columns: aspects, array of columns for open species available, boolean of agree among species or disagree.
+
 - [Open Species License and their variants](/dist/)
 
 ### Archived
