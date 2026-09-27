@@ -28,6 +28,9 @@ Especially in furry fandom.
 Im wondering why open species at furry fandom doesnt have unified statement of permission for their species.
 Also, im doing just for fun to see how can i unify those statements and i had much free time
 
+This license should not restrict you to follow the terms inside this license.
+In a case, you wrap this license so you can apply your additional terms.
+
 ## Available License
 
 I made and offer some license to be used, here below
