@@ -1,0 +1,35 @@
+[meta]
+name = "Open Species License"
+short= "OSL"
+version = "1.0-alpha"
+
+[features.nsfw]
+
+# added to name when disabled
+suffix = "SafeForWork"
+short = "S"   
+
+default = true
+
+[features.nsfw.on]
+permissions  = ["Create NSFW content of your MYO."]
+conditions   = ["Tag NSFW content appropriately where you post it."]
+prohibitions = ["Create sexual content depicting characters who are, or appear to be, minors."]
+
+[features.nsfw.off]
+prohibitions = ["Create NSFW content of your MYO."]
+
+[features.hybrids]
+
+# added to name when disabled
+suffix = "PureNoHybrid"
+short = "P"   
+
+default = true
+
+[features.hybrids.on]
+permissions = ["Create hybrids of the Species with other species."]
+conditions  = ["Follow the other species' rules when making hybrids."]
+
+[features.hybrids.off]
+prohibitions = ["Create hybrids of the Species with other species."]
