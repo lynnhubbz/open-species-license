@@ -75,12 +75,13 @@ Examples
 
 The data be in excel
 
-Give each coder, as columns: 
+Give to each coder this items, as columns: 
 - species name, 
 - source link
 - aspect 
 - the relevant quoted passage(s) 
   - already pulled out — not the full page, and not a bare link.
+- code (empty blank)
 - note
 
 > [!INFO] relevant quoted passage

@@ -1,0 +1,4 @@
+*
+!.gitignore
+!001_raw_data/
+!001_raw_data/**
