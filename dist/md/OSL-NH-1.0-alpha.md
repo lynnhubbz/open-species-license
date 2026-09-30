@@ -54,15 +54,12 @@ Under these conditions
 
 1. The Creator's artwork, reference sheets, and documents are All Rights Reserved to the Creator
 
-
-### A. Additional Terms
-
-1. This document SHOULD NOT restrict Creator to add their own additional terms
+2. This document SHOULD NOT restrict Creator to add their own additional terms
   
-2. Therefore, You MUST be aware of Creator's additional terms and conditions.
+3. Therefore, You MUST be aware of Creator's additional terms and conditions.
 
 
-### B. External Document
+### A. External Document
 
 1. [Species overview]()
 
@@ -95,7 +92,9 @@ The words of which the initial letter is capitalized have meanings defined below
 
 The key words **"MUST"**, **"MUST NOT"**, **"REQUIRED"**, **"SHALL"**, **"SHALL NOT"**, **"SHOULD"**, **"SHOULD NOT"**, **"RECOMMENDED"**, **"NOT RECOMMENDED"**, **"MAY"**, and **"OPTIONAL"** 
 in this document are to be interpreted as described in 
-[BCP 14](https://www.rfc-editor.org/info/bcp14/) \[[RFC 2119](https://www.rfc-editor.org/info/rfc2119/)\] \[[RFC 8174](https://www.rfc-editor.org/info/rfc8174/)\] 
+\[[BCP 14](https://www.rfc-editor.org/info/bcp14/)\] 
+\[[RFC 2119](https://www.rfc-editor.org/info/rfc2119/)\] 
+\[[RFC 8174](https://www.rfc-editor.org/info/rfc8174/)\] 
 when, and only when, they appear in uppercase.
 
 
