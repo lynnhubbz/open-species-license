@@ -2,9 +2,9 @@
 # {{name}}
 Version {{version}}
 
-See the definition used in this document listed [down here](#4-definitions)
+See the definition used in this document listed [down here](#section-5---definitions)
 
-## 1) Permissions 
+## Section 1 - Permissions 
 
 **You MAY:**
 
@@ -17,7 +17,7 @@ See the definition used in this document listed [down here](#4-definitions)
 
 Under these conditions
 
-## 2) Conditions
+## Section 2 - Conditions
 
 **You MUST:**
 
@@ -27,7 +27,7 @@ Under these conditions
 
 {{conditions}}
 
-## 3)  Prohibitions
+## Section 3 - Prohibitions
 
 **You MUST NOT:**
 
@@ -39,31 +39,7 @@ Under these conditions
 
 {{prohibitions}} 
 
-## 4) Definitions
-
-The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these legal documents:
-
-**"You" (or "Your")** 
-  refers to any individual, collective, or organization exercising permissions granted by this document—including readers, writers, artists, developers, contributors, and collaborators.
-
-**Creator** 
-  refers to the originator of the Species, and the individual, collective, or organization that holds ownership/copyright of the species
-
-**Species**
-  The licensed species, this include but not limited to characters, art, stories, and other original creations, as described in the species document and guidelines.
-
-**Make-Your-Own** "MYO"
-  refers to a character of the Species designed by You or someone other than the Creator
-
-**NSFW** or **NSFP**:
-  refers to content which may contain  pornography and nudity, profanity and slurs, extreme graphic violence, or other potentially disturbing subject matter
-
-The key words **"MUST"**, **"MUST NOT"**, **"REQUIRED"**, **"SHALL"**, **"SHALL NOT"**, **"SHOULD"**, **"SHOULD NOT"**, **"RECOMMENDED"**, **"NOT RECOMMENDED"**, **"MAY"**, and **"OPTIONAL"** 
-in this document are to be interpreted as described in 
-[BCP 14](https://www.rfc-editor.org/info/bcp14/) \[[RFC 2119](https://www.rfc-editor.org/info/rfc2119/)\] \[[RFC 8174](https://www.rfc-editor.org/info/rfc8174/)\] 
-when, and only when, they appear in uppercase.
-
-## 5) Miscellaneous 
+## SEction 4 - Miscellaneous 
 
 1. The Creator's artwork, reference sheets, and documents are All Rights Reserved to the Creator
 
@@ -78,3 +54,32 @@ when, and only when, they appear in uppercase.
 1. [Species overview]()
 
 2. [Morphology and anatomical guidelines]()
+
+## Section 5 - Definitions
+
+The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these legal documents:
+
+**"You" (or "Your")** 
+  refers to any individual, collective, or organization exercising permissions granted by this document—including readers, writers, artists, developers, contributors, and collaborators.
+
+**Creator** 
+  refers to the originator of the Species, and the individual, collective, or organization that holds ownership/copyright of the species
+
+**Species**
+  refers to The licensed species, as described in the species document and guidelines.
+
+**Artwork**
+  this include but not limited to characters, art, stories, and other original creations, 
+
+**Make-Your-Own** "MYO"
+  refers to a character of the Species designed by You or someone other than the Creator
+
+**NSFW** or **NSFP**:
+  refers to content which may contain  pornography and nudity, profanity and slurs, extreme graphic violence, or other potentially disturbing subject matter
+
+The key words **"MUST"**, **"MUST NOT"**, **"REQUIRED"**, **"SHALL"**, **"SHALL NOT"**, **"SHOULD"**, **"SHOULD NOT"**, **"RECOMMENDED"**, **"NOT RECOMMENDED"**, **"MAY"**, and **"OPTIONAL"** 
+in this document are to be interpreted as described in 
+[BCP 14](https://www.rfc-editor.org/info/bcp14/) \[[RFC 2119](https://www.rfc-editor.org/info/rfc2119/)\] \[[RFC 8174](https://www.rfc-editor.org/info/rfc8174/)\] 
+when, and only when, they appear in uppercase.
+
+

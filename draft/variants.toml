@@ -6,8 +6,8 @@ version = "1.0-alpha"
 [features.nsfw]
 
 # added to name when disabled
-suffix = "SafeForWork"
-short = "S"   
+suffix = "SfwOnly"
+short = "SO"   
 
 default = true
 
@@ -23,7 +23,7 @@ prohibitions = ["Create NSFW content of your MYO."]
 
 # added to name when disabled
 suffix = "PureNoHybrid"
-short = "P"   
+short = "NH"   
 
 default = true
 

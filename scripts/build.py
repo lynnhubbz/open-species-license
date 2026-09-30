@@ -7,6 +7,7 @@ Needs Python 3.11+ (tomllib). No other dependencies.
 import argparse
 import itertools
 import re
+import textwrap
 import tomllib
 from pathlib import Path
 
@@ -55,19 +56,56 @@ def render(template: str, meta: dict, features: dict, disabled: set[str]) -> tup
     return short, out
 
 
-def main() -> None:
+def md_to_txt(md: str, width: int = 80) -> str:
+    """Strip Markdown down to readable plain text."""
+    md = re.sub(r"\[([^\]]+)\]\(\s*\)", r"\1", md)             # [text]() -> text
+    md = re.sub(r"\[([^\]]+)\]\(#[^)]*\)", r"\1", md)           # in-page anchors -> text
+    md = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1 (\2)", md)     # [text](url) -> text (url)
+    md = md.replace("\\[", "[").replace("\\]", "]")               # unescape brackets
+    md = re.sub(r"^\*\*(.+?)\*\*[ \t]*\n[ \t]+", "\x00\\1\x00", md, flags=re.M)  # glossary terms
+    md = re.sub(r"\*\*(.+?)\*\*", r"\1", md)                      # bold
+    md = re.sub(r"^(#{1,6} .*)$", r"\n\1\n", md, flags=re.M)        # headings get own paragraph
+
+    out = []
+    for para in re.split(r"\n\s*\n", md.strip()):
+        text = re.sub(r" {2,}", " ", " ".join(line.strip() for line in para.splitlines()))
+        g = re.match(r"\x00(.+?)\x00(.*)", text)
+        if g:
+            body = textwrap.fill(g.group(2), width - 4 if width else 10**6,
+                                 initial_indent="    ", subsequent_indent="    ",
+                                 break_long_words=False, break_on_hyphens=False)
+            out.append(g.group(1) + "\n" + body)
+            continue
+        m = re.match(r"(#{1,6})\s+(.*)", text)
+        if m:
+            title = m.group(2).strip()
+            out.append(title + "\n" + ("=" if len(m.group(1)) == 1 else "-") * len(title))
+            continue
+        item = re.match(r"(\d+\.|[-*])\s+", text)
+        if width:
+            text = textwrap.fill(text, width, subsequent_indent=" " * (item.end() if item else 0),
+                                 break_long_words=False, break_on_hyphens=False)
+        out.append(text)
+    return "\n\n".join(out) + "\n"
+
+
+def main_markdown() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--template", default="draft/base.md")
     ap.add_argument("--config", default="draft/variants.toml")
-    ap.add_argument("--out", default="dist")
+    ap.add_argument("--out", default="dist/md")
+    ap.add_argument("--txt-out", default="dist/txt")
+    ap.add_argument("--formats", nargs="+", choices=["md", "txt"], default=["md", "txt"])
+    ap.add_argument("--wrap", type=int, default=80, help="txt line width, 0 = no wrapping")
     args = ap.parse_args()
 
     template = Path(args.template).read_text(encoding="utf-8")
     cfg = tomllib.loads(Path(args.config).read_text(encoding="utf-8"))
     meta, features = cfg["meta"], cfg.get("features", {})
 
-    out_dir = Path(args.out)
-    out_dir.mkdir(parents=True, exist_ok=True)
+    dirs = {"md": Path(args.out), "txt": Path(args.txt_out)}
+    for fmt in args.formats:
+        dirs[fmt].mkdir(parents=True, exist_ok=True)
 
     # every on/off combination; default state first
     names = list(features)
@@ -75,10 +113,11 @@ def main() -> None:
         disabled = {n for n, flip in zip(names, combo)
                     if flip == features[n].get("default", True)}
         short, text = render(template, meta, features, disabled)
-        path = out_dir / f"{short}-{meta['version']}.md"
-        path.write_text(text, encoding="utf-8")
-        print(f"wrote {path}")
+        for fmt in args.formats:
+            path = dirs[fmt] / f"{short}-{meta['version']}.{fmt}"
+            path.write_text(text if fmt == "md" else md_to_txt(text, args.wrap), encoding="utf-8")
+            print(f"wrote {path}")
 
 
 if __name__ == "__main__":
-    main()
+    main_markdown()

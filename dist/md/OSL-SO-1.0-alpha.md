@@ -1,22 +1,23 @@
 
-# Open Species License SafeForWork PureNoHybrid
+# Open Species License SfwOnly
 Version 1.0-alpha
 
-See the definition used in this document listed [down here](#4-definitions)
+See the definition used in this document listed [down here](#section-5---definitions)
 
-## 1) Permissions 
+## Section 1 - Permissions 
 
 **You MAY:**
 
-1. Create MYOs freely. No approval or registration is required.
+1. Create Make-Your-Own (MYOs) freely. No approval or registration is required.
 
 2. Sell, trade, or gift your MYO designs, and take or give commissions
   of them.
 
+3. Create hybrids of the Species with other species.
 
 Under these conditions
 
-## 2) Conditions
+## Section 2 - Conditions
 
 **You MUST:**
 
@@ -24,8 +25,9 @@ Under these conditions
 
 2. Follow the Anatomical Guidelines.
 
+3. Follow the other species' rules when making hybrids.
 
-## 3)  Prohibitions
+## Section 3 - Prohibitions
 
 **You MUST NOT:**
 
@@ -37,9 +39,23 @@ Under these conditions
 
 4. Create NSFW content of your MYO.
 
-5. Create hybrids of the Species with other species.
+## SEction 4 - Miscellaneous 
 
-## 4) Definitions
+1. The Creator's artwork, reference sheets, and documents are All Rights Reserved to the Creator
+
+### A. Additional Terms
+
+1. This document SHOULD NOT restrict Creator to add their own additional terms
+  
+2. Therefore, You MUST be aware of Creator's additional terms and conditions.
+
+### B. External Document
+
+1. [Species overview]()
+
+2. [Morphology and anatomical guidelines]()
+
+## Section 5 - Definitions
 
 The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these legal documents:
 
@@ -50,7 +66,10 @@ The words of which the initial letter is capitalized have meanings defined below
   refers to the originator of the Species, and the individual, collective, or organization that holds ownership/copyright of the species
 
 **Species**
-  The licensed species, this include but not limited to characters, art, stories, and other original creations, as described in the species document and guidelines.
+  refers to The licensed species, as described in the species document and guidelines.
+
+**Artwork**
+  this include but not limited to characters, art, stories, and other original creations, 
 
 **Make-Your-Own** "MYO"
   refers to a character of the Species designed by You or someone other than the Creator
@@ -63,12 +82,4 @@ in this document are to be interpreted as described in
 [BCP 14](https://www.rfc-editor.org/info/bcp14/) \[[RFC 2119](https://www.rfc-editor.org/info/rfc2119/)\] \[[RFC 8174](https://www.rfc-editor.org/info/rfc8174/)\] 
 when, and only when, they appear in uppercase.
 
-## 5) Additional Information 
 
-1. The Creator's artwork, reference sheets, and documents are All Rights Reserved to the Creator
-
-### A. External Document
-
-1. [Species overview]()
-
-2. [Morphology and anatomical guidelines]()
