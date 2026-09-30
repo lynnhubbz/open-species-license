@@ -5,6 +5,8 @@ Version 1.0-alpha
 
 See the definition used in this document listed down here
 
+
+
 Section 1 - Permissions
 -----------------------
 
@@ -13,6 +15,8 @@ You MAY:
 1. Create Make-Your-Own (MYOs) freely. No approval or registration is required.
 
 2. Sell, trade, or gift your MYO designs, and take or give commissions of them.
+
+
 
 Under these conditions
 
@@ -24,6 +28,9 @@ You MUST:
 1. Credit the original creator for the species concept.
 
 2. Follow the Anatomical Guidelines.
+
+
+
 
 Section 3 - Prohibitions
 ------------------------
@@ -40,11 +47,14 @@ You MUST NOT:
 
 5. Create hybrids of the Species with other species.
 
-SEction 4 - Miscellaneous
+
+
+Section 4 - Miscellaneous
 -------------------------
 
 1. The Creator's artwork, reference sheets, and documents are All Rights
    Reserved to the Creator
+
 
 A. Additional Terms
 -------------------
@@ -53,12 +63,15 @@ A. Additional Terms
 
 2. Therefore, You MUST be aware of Creator's additional terms and conditions.
 
+
 B. External Document
 --------------------
 
 1. Species overview
 
 2. Morphology and anatomical guidelines
+
+
 
 Section 5 - Definitions
 -----------------------
@@ -85,12 +98,14 @@ Artwork
     this include but not limited to characters, art, stories, and other
     original creations,
 
-Make-Your-Own "MYO" refers to a character of the Species designed by You or
-someone other than the Creator
+Make-Your-Own
+    or "MYO" refers to a character of the Species designed by You or someone
+    other than the Creator
 
-NSFW or NSFP: refers to content which may contain pornography and nudity,
-profanity and slurs, extreme graphic violence, or other potentially disturbing
-subject matter
+NSFW or NSFP
+    refers to content which may contain pornography and nudity, profanity
+    and slurs, extreme graphic violence, or other potentially disturbing
+    subject matter
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this

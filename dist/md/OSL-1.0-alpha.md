@@ -4,6 +4,8 @@ Version 1.0-alpha
 
 See the definition used in this document listed [down here](#section-5---definitions)
 
+
+
 ## Section 1 - Permissions 
 
 **You MAY:**
@@ -16,6 +18,8 @@ See the definition used in this document listed [down here](#section-5---definit
 3. Create NSFW content of your MYO.
 
 4. Create hybrids of the Species with other species.
+
+
 
 Under these conditions
 
@@ -31,6 +35,9 @@ Under these conditions
 
 4. Follow the other species' rules when making hybrids.
 
+
+
+
 ## Section 3 - Prohibitions
 
 **You MUST NOT:**
@@ -43,9 +50,12 @@ Under these conditions
 
 4. Create sexual content depicting characters who are, or appear to be, minors.
 
-## SEction 4 - Miscellaneous 
+
+
+## Section 4 - Miscellaneous 
 
 1. The Creator's artwork, reference sheets, and documents are All Rights Reserved to the Creator
+
 
 ### A. Additional Terms
 
@@ -53,11 +63,14 @@ Under these conditions
   
 2. Therefore, You MUST be aware of Creator's additional terms and conditions.
 
+
 ### B. External Document
 
 1. [Species overview]()
 
 2. [Morphology and anatomical guidelines]()
+
+
 
 ## Section 5 - Definitions
 
@@ -75,10 +88,11 @@ The words of which the initial letter is capitalized have meanings defined below
 **Artwork**
   this include but not limited to characters, art, stories, and other original creations, 
 
-**Make-Your-Own** "MYO"
+**Make-Your-Own** 
+  or "MYO"
   refers to a character of the Species designed by You or someone other than the Creator
 
-**NSFW** or **NSFP**:
+**NSFW** or **NSFP**
   refers to content which may contain  pornography and nudity, profanity and slurs, extreme graphic violence, or other potentially disturbing subject matter
 
 The key words **"MUST"**, **"MUST NOT"**, **"REQUIRED"**, **"SHALL"**, **"SHALL NOT"**, **"SHOULD"**, **"SHOULD NOT"**, **"RECOMMENDED"**, **"NOT RECOMMENDED"**, **"MAY"**, and **"OPTIONAL"** 
