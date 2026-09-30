@@ -1,0 +1,10 @@
+flowchart TD
+    A["1. Define: 01 + 02"] --> B["2. Prepare: extract, filter, codebook"]
+    B --> C["3. Validate: pilot, reliability"]
+    C --> D{"alpha OK?"}
+    D -- "no: fix rules" --> C
+    D -- "yes: freeze" --> E["4. Code all species"]
+    E --> F["5a. License: coverage, base, variants"]
+    E --> G["5b. Classify species"]
+    F --> H["6. Report"]
+    G --> H

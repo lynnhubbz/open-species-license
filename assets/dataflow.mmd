@@ -1,0 +1,45 @@
+flowchart LR
+    subgraph IN["Inputs"]
+        LIT("Literature")
+        SRC("Rules pages + snapshots")
+        VAR("variables.toml")
+    end
+    subgraph DEFINE["Define"]
+        DEF("Definitions")
+        ASP("Aspect list")
+    end
+    subgraph PREP["Prepare"]
+        PAS("Passages sheet")
+        INC("Included species")
+        CB("Codebook, frozen")
+        REL("Reliability report")
+    end
+    subgraph CODE["Code"]
+        TAB("Coded table")
+    end
+    subgraph ANALYSE["Analyse"]
+        LIC("License + variants")
+        CLS("Species classes")
+    end
+
+    LIT --> DEF
+    SRC --> ASP
+    DEF --> ASP
+    ASP --> PAS
+    SRC --> PAS
+    PAS --> INC
+    DEF --> CB
+    ASP --> CB
+    CB --> REL
+    PAS --> REL
+    REL -- "fail: fix rules" --> CB
+    CB --> TAB
+    INC --> TAB
+    PAS --> TAB
+    TAB --> LIC
+    TAB --> CLS
+    DEF --> LIC
+    DEF --> CLS
+    ASP --> CLS
+    VAR --> INC
+    VAR --> ANALYSE
