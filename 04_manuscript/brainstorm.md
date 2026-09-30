@@ -11,3 +11,5 @@ For license:
     - hybrid
     - nsfw
   - intended to be able to be wrapped by additional terms, making it semi-open if the wrapper is restrictive
+
+gitignore typ so all scattered markdown is at least be the source of the typ
