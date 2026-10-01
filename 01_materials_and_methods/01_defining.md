@@ -1,4 +1,6 @@
-Define restricting/limiting
+# Reviewing Definitions
+
+## Review (Gathering Information)
 
 **Grey Literature and Literature review** → 
 
@@ -12,3 +14,5 @@ Output:
   - reason why subspecies is not included
 
 These above also goes into codebook rules.
+
+## Synthesizing

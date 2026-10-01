@@ -1,3 +1,6 @@
 misc/
 **.typ
 **.pdf
+**.zip
+
+!dataflow.typ

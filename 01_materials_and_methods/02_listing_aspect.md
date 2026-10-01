@@ -1,3 +1,6 @@
+# 
+
+##
 
 **Read species terms by Scoping Review**
 
@@ -13,3 +16,5 @@ Output:
 - Which aspects are baseline (credit, guidelines). These don't get coded as variables, since every license includes them.
 
 These above also goes into codebook rules.
+
+## Summarizing

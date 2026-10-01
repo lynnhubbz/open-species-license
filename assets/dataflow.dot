@@ -1,0 +1,145 @@
+digraph dataflow {
+  rankdir=LR; newrank=true; nodesep=0.22; ranksep=0.5;
+  edge [arrowsize=0.7];
+
+  // ---- ACTIVITIES (DFD process): style defined ONCE here, then only labels ----
+  // rounded box, bold red border, white fill, bold label
+  // optional red header band: replace  fillcolor=white,  with  fillcolor="#d73027;0.22:white", gradientangle=270,
+  node [shape=box, style="rounded,filled", color="#d73027", penwidth=3,
+        fillcolor=white,
+        fontname="", fontsize=11, margin="0.14,0.2"];
+
+
+
+  def [label="Defining\n(Grey & Literature)"];
+  asp [label="Listing Aspect\n(Scoping)"];
+  dev [label="Developing"];
+  syn [label="Synthesizing /\nRedefining"];
+  summ [label="Summarizing"];
+  build [label="Build"];
+  kripendorf [label="Reliability Test\n(Pilot + Loop)"];
+  P_gather [label="Gather Information"];
+  P_filter [label="Filter species"];
+  coding  [label="Code all Species"]
+
+  // ---- ITEMS (data): every node declared after this line is a plain green box ----
+  node [shape=box, style=solid, color="#1a9850", penwidth=1.6, gradientangle=0,
+        fontname="", fontsize=11, margin="0.11,0.055"];
+
+  subgraph cluster_method {
+    label="Method"; style=dashed; color=black; penwidth=1;
+    def;
+    dev;
+    asp;
+    P_gather;
+  }
+  subgraph cluster_data {
+    label="Data / Output"; style=dashed; color=black; penwidth=1;
+    subgraph cluster_definitions {
+      label=""; style=dotted; color=black; penwidth=1;
+      d1 [label="Open Species defs"];
+      d2 [label="Open Source defs"];
+      d3 [label="Open Access defs"];
+      d4 [label="Miscellaneous Open defs"];
+      d5 [label="Restricting defs"];
+    }
+    subgraph cluster_aspects {
+      label=""; style=dotted; color=black; penwidth=1;
+      asp1 [label="Aspects and its defs"];
+      asp2 [label="Tag"];
+      asp3 [label="Merge rules"];
+      asp4 [label="Which aspect is baseline"];
+    }
+    subgraph cluster_species {
+      label=""; style=dotted; color=black; penwidth=1;
+    spec [label="Species List"];
+    pssg [label="Passage"];
+    }
+
+  }
+  subgraph cluster_processing {
+    label="Processing Phase 1"; style=dashed;   
+    subgraph cluster_codebook {
+        label=""; style=dotted; color=black; penwidth=1;
+        syn;
+        summ;
+        nd [label="New Definitions"];
+        fa [label="Final Aspect"];
+        build;
+        cb [label="Codebook"];
+    }
+    subgraph cluster_filter {
+        label=""; style=dotted; color=black; penwidth=1;
+        P_filter;
+        included [label="Included Species"]
+        excluded [label="insufficient"]
+    }
+
+  }
+  subgraph cluster_processing2 {
+    label="Processing Phase 2"; style=dashed; color=black; penwidth=1;
+    kripendorf;
+    cb2 [label="Codebook \nRevised"]
+  }
+  subgraph cluster_postprocessing {
+    label="Post-Processing"; style=dashed; color=black; penwidth=1;
+    coding
+    finalcode [label="Coded Table"];
+  }
+  subgraph cluster_analysis {
+    label="Analysis"; style=dashed; color=black; penwidth=1;
+    license [label="License"];
+  }
+  { rank=same; def; asp; P_gather; dev; }
+  { rank=same; d1; d2; d3; d4; d5; asp1; asp2; asp3; asp4; spec; pssg; }
+  // Processing Phase 1 = one column, top to bottom:
+  //   Synthesizing -> New Definitions -> Build <- Final Aspect <- Summarizing
+  { rank=same; syn; nd; build; fa; summ; P_filter; vars }
+  { rank=same; cb; included; excluded }
+  // Phase 2 + Post-Processing share ONE column (stacked), instead of three columns:
+  //   Reliability Test -> Codebook Revised -> Code all Species -> Coded Table
+  { rank=same; kripendorf; cb2; coding; finalcode }
+
+  vars[label="Variables &\nTresholds"]
+
+  // Method column, top to bottom: Defining, Developing, Listing Aspect, Gather Information
+  P_gather -> asp -> dev -> def [style=invis];
+  asp -> P_gather [constraint=false];
+  P_gather -> {spec pssg};
+
+  // Data column, top to bottom: definitions, aspects, species list, passage
+  pssg -> spec -> asp4 -> asp3 -> asp2 -> asp1 -> d5 -> d4 -> d3 -> d2 -> d1 [style=invis];
+  def -> {d1 d2 d3 d4 d5};
+  asp -> {asp1 asp2 asp3 asp4};
+
+  {d1 d2 d3 d4 d5} -> syn;
+  {asp1 asp2 asp4} -> summ;
+
+  // vertical arrows inside the Phase 1 column (constraint=false keeps them in one column)
+  syn -> nd   [constraint=false];
+  nd  -> build [constraint=false];
+  summ -> fa  [constraint=false];
+  fa  -> build [constraint=false];
+  vars -> P_filter -> summ -> fa -> build -> nd -> syn [style=invis];   // top-to-bottom order (listed bottom-up because of rankdir=LR)
+
+  // Codebook goes to the next column, level with Build
+  build -> cb;
+
+  // Filter outputs
+  {spec pssg} -> P_filter -> {included excluded};
+  excluded -> included -> cb [style=invis];                 // column order: Codebook, Included, insufficient
+
+  // Phase 2 + Post-Processing column: vertical arrows (constraint=false keeps one column)
+  cb -> kripendorf;
+  included -> kripendorf;       // pilot/reliability subset comes from the included species
+  included -> coding;
+  // flat edges order the column: tail is placed BELOW head, so each is declared bottom-up with dir=back
+  // (arrows are still drawn top-down: Reliability Test -> Codebook Revised -> Code all Species -> Coded Table)
+  cb2        -> kripendorf [dir=back];
+  coding     -> cb2        [dir=back];
+  finalcode  -> coding     [dir=back];
+  finalcode -> license;
+
+  // configuration inputs: dashed grey so they do not compete with the main flow
+  vars -> {kripendorf P_filter coding} [style=dashed, color="#1a9850", constraint=false];
+}

@@ -1,5 +1,6 @@
 ## Part C: Reporting
 
+- **Sankey Diagram**
 - **Aspect Chart:** one 100% bar per aspect, split by code. This shows Steps 2 and 4 visually.
 - Aspect Table 
 - **Species Table:** each species with its: 

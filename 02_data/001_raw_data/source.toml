@@ -2,112 +2,111 @@
 #
 # One [[species]] table per species.
 #   name    = species name, unique
-#   sources = every page that states its rules; [] = none found yet
+#   sources = sub-tables for every page that states its rules; omit if none found yet
 #
 # Later, when you record access dates or snapshots, switch a species to sub-tables:
-#   [[species.sources]]
-#   url      = "https://..."
-#   accessed = "2026-09-30"
-#   snapshot = "https://web.archive.org/..."
+#     [[species.sources]]
+#     url      = "https://..."
+#     accessed = "2026-09-30"
+#     snapshot = "https://web.archive.org/..."
 
 [[species]]
 name = "Avali"
-sources = []
 
 [[species]]
 name = "Drekkubus"
-sources = []
 
 [[species]]
 name = "Echos"
-sources = ["https://echoesopenspecies.carrd.co/"]
+    [[species.sources]]
+    url = "https://echoesopenspecies.carrd.co/"
 
 [[species]]
 name = "Hazorise"
-sources = []
 
 [[species]]
 name = "Kellashee"
-sources = []
 
 [[species]]
 name = "Kurizon"
-sources = []
 
 [[species]]
 name = "Manokt"
-sources = []
 
 [[species]]
 name = "Sergal"
-sources = []
 
 [[species]]
 name = "Sodaroo"
-sources = []
 
 [[species]]
 name = "Synx"
-sources = []
 
 [[species]]
 name = "Taidium"
-sources = []
 
 [[species]]
 name = "Tira"
-sources = []
 
 [[species]]
 name = "Vottle"
-sources = ["https://www.tumblr.com/vottlespecies"]
+    [[species.sources]]
+    url = "https://www.tumblr.com/vottlespecies"
 
 [[species]]
 name = "Amphimorpho"
-sources = ["https://amphimorpho.carrd.co/#faq"]
+    [[species.sources]]
+    url = "https://amphimorpho.carrd.co/#faq"
 
 [[species]]
 name = "Ampwaves"
-sources = ["https://www.ampwavespecies.com/"]
+    [[species.sources]]
+    url = "https://www.ampwavespecies.com/"
 
 [[species]]
 name = "Aunova"
-sources = ["https://toyhou.se/~world/108591.manae-aunova-open-species-"]
+    [[species.sources]]
+    url = "https://toyhou.se/~world/108591.manae-aunova-open-species-"
 
 [[species]]
 name = "Dutch Angel Dragons"
-sources = ["https://www.dutchangeldragons.com/"]
+    [[species.sources]]
+    url = "https://www.dutchangeldragons.com/"
 
 [[species]]
 name = "Impimps"
-sources = ["https://www.deviantart.com/kunmao/journal/TLDR-Impims-are-now-an-open-species-1159703733"]
+    [[species.sources]]
+    url = "https://www.deviantart.com/kunmao/journal/TLDR-Impims-are-now-an-open-species-1159703733"
 
 [[species]]
 name = "Naviwilk"
-sources = ["https://naviwilk.fandom.com/wiki/The_Official_Naviwilk_Wiki"]
+    [[species.sources]]
+    url = "https://naviwilk.fandom.com/wiki/The_Official_Naviwilk_Wiki"
 
 [[species]]
 name = "Pancan"
-sources = ["https://www.furaffinity.net/journal/8246495/"]
+    [[species.sources]]
+    url = "https://www.furaffinity.net/journal/8246495/"
 
 [[species]]
 name = "Phonodroids"
-sources = ["https://smorbee.carrd.co/#phonodroid"]
+    [[species.sources]]
+    url = "https://smorbee.carrd.co/#phonodroid"
 
 [[species]]
 name = "Synth"
-sources = ["https://synthspecies.com/wiki/Main_Page"]
+    [[species.sources]]
+    url = "https://synthspecies.com/wiki/Main_Page"
 
 [[species]]
 name = "WickerBeast"
-sources = ["https://www.wickercave.net/rules"]
+    [[species.sources]]
+    url = "https://www.wickercave.net/rules"
 
 [[species]]
 name = "Primagen"
-sources = []
 # unnumbered in the old sheet
 
 [[species]]
 name = "Protogen"
-sources = []
 # unnumbered in the old sheet
