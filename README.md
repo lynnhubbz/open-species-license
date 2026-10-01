@@ -42,3 +42,12 @@ Species could be licensed under CC licenses
 ## Decision Record
 
 See how the Stable license are finalized [here](/architecture/) 
+
+## Using this License?
+
+Species using the Open Species License are in a dedicated file.
+<!-- To be added, open an issue or pull request.  -->
+Show your species using the license via displaying the badge [![OSL 1.0](https://img.shields.io/badge/license-OSL%201.0-blue)](https://github.com/lynnhubbz/open-species-license).
+
+A ⭐ also helps others find it.
+   
