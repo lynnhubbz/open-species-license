@@ -69,11 +69,15 @@ Under these conditions
 
 The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these legal documents:
 
-**"You" (or "Your")** 
-  refers to any individual, collective, or organization exercising permissions granted by this document—including readers, writers, artists, developers, contributors, and collaborators.
+**"You" (or "Your")**
+  refers to the licensee; any individual, collective, or organization
+  exercising permissions granted by this license, including artists,
+  writers, developers, contributors, and collaborators.
 
-**Creator** 
-  refers to the originator of the Species, and the individual, collective, or organization that holds ownership/copyright of the species
+**Creator**
+  refers to the licensor; the originator of the Species, together with
+  any individual, collective, or organization that holds the Creator's
+  rights in the Creator's artwork and documents.
 
 **Species**
   refers to The licensed species, as described in the species document and guidelines.
